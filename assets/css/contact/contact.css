@@ -156,8 +156,6 @@
 
     .contact-send-button {
         flex-direction: column;
-        
-
     }
 
 
@@ -180,10 +178,6 @@
 
     .send-input {
         margin-bottom: 16px;
-    }
-
-    .send-message-container-message label {
-        
     }
 }
 
