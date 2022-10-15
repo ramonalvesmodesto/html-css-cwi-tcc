@@ -1,0 +1,125 @@
+/*-----Main-----*/
+/*--Banner--*/
+.banner {
+    height: 50vh;
+    background: url(../../../assets/img/about.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+/*-----Main-----*/
+/*--Team--*/
+.team {
+    padding: 60px 0;
+}
+
+.team-list {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 33px;
+    flex-wrap: wrap;
+}
+
+.team-list img {
+    width: 257px;
+    height: 257px;
+}
+
+.team-title {
+    color: var(--purple);
+}
+
+.team-ellen {
+    position: relative;
+}
+
+.team-ellen-descrition {
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin: 0 14px;
+    padding-bottom: 19px;
+}
+
+.team-ellen-descrition p {
+    margin: 0;
+    width: 100%;
+}
+
+.team-ellen-descrition h5 {
+    margin: 10px 0;
+}
+
+.team-user-container {
+    margin-bottom: 19px;
+    margin-right: 58px;
+}
+
+/*-----Main-----*/
+/*--Description--*/
+.description {
+    background-color: var(--light-gray);
+    padding: 120px 0;
+}
+
+.description-card {
+    width: 336px;
+    margin-right: 80px;
+}
+
+.description-item {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.description-item-title {
+    display: flex;
+    align-items: center;
+}
+
+.description-item-title h3 {
+    margin-left: 26px;
+    color: var(--purple);
+}
+
+@media (max-width: 945px) {
+    .description-item {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .description-card {
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 722px) {
+    .team-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .team-user-container {
+        margin-right: 0;
+    }
+
+    .description-card {
+        width: 70%;
+        margin-bottom: 67px;
+    }
+
+    .description {
+        padding: 80px 0;
+    }
+
+    .description-item-title h3  {
+        font-size: 30px;
+    }
+}

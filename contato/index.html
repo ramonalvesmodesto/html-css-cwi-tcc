@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/common/style.css">
+    <link rel="stylesheet" href="../assets/css/common/header.css">
+    <link rel="stylesheet" href="../assets/css/contact/contact.css">
+    <link rel="stylesheet" href="../assets/css/common/footer.css">
+    <title>Crescer TCC</title>
+</head>
+
+<body>
+    <header class="header">
+        <section class="container header-container">
+            <a href="/" class="logo">
+                <img src="../assets/img/icons/logo.svg" alt="Logo">
+                <img src="../assets/img/icons/logo-name.svg" alt="Logo name" class="logo-name">
+            </a>.
+
+            <label for="menu-control">
+                <img src="../assets/img/icons/hamburger.svg" alt="Menu" class="hamburger">
+            </label>
+
+            <input type="checkbox" id="menu-control" class="menu-control">
+
+            <ul class="menu">
+                <a href="/" class="menu-item">
+                    <li class="menu-item-link">Home</li>
+                </a>
+                <a href="/sobre/index.html" class="menu-item">
+                    <li class="menu-item-link">Sobre nós</li>
+                </a>
+                <a href="/" class="menu-item">
+                    <li class="menu-item-link">Serviços</li>
+                </a>
+                <a href="/contato/index.html" class="menu-item">
+                    <li class="menu-item-link">Contato</li>
+                </a>
+            </ul>
+        </section>
+    </header>
+
+    <main class="main">
+        <section class="banner overlay">
+            <div class="banner-content ">
+                <div class="container">
+                    <h1>Contato</h1>
+                    <p>Olá, somos a Lorem Ipsom.</p>
+                    <p>Nosso trabalho é desenvolver textos de marcação.</p>
+                    <button class="banner-button button-primary">
+                        SAIBA MAIS
+                        <img src="./assets/img/arrow-right.svg" alt="" class="arrow-right">
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact container">
+            <div class="send-message">
+                <div class="send-message-title">
+                    <h4>Envie-nos uma mensagem</h4>
+                    <img src="../assets/img/icons/ENVELOP.svg" alt="Email" class="send-message-email">
+                </div>
+                <form action="">
+                    <div class="send-message-container">
+                        <div class="send-input">
+                            <label>
+                                <span>Nome</span>
+                                <input type="text" id="name" class="name input" placeholder="Ex.: José Maria da Silva">
+                            </label>
+                        </div>
+
+                        <div class="send-input">
+                            <label>
+                                <span>E-mail</span>
+                                <input type="email" id="email" class="email input"
+                                    placeholder="Ex.: seuemail@email.com">
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="send-message-container">
+                        <label class="send-input">
+                            <span>Ramo em que atua</span>
+                            <select name="ramo" id="ramo" class="ramo">
+                                <option value="selecione" disabled selected>Selecione...</option>
+                                <option value="frontend">Front-End</option>
+                                <option value="backend">Back-End</option>
+                                <option value="fullstack">Full-Stack</option>
+                            </select>
+                        </label>
+
+                        <div class="send-message-container-checkbox send-input">
+                            <span>Assunto</span>
+                            <div class="send-message-container">
+                                <div class="checkbox-container">
+                                    <label><input type="radio" name="checkbox" class="investment checkbox"> Investimento</label>
+                                </div>
+
+                                <div class="checkbox-container"> 
+                                    <label><input type="radio" name="checkbox" class="hiring checkbox"> Contratação</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="send-message-container send-message-container-message send-input">
+                        <label>
+                            <span>Mensagem</span>
+                            <textarea name="message" id="message" class="message" placeholder="Digite sua mensagem aqui"></textarea>
+                        </label>
+                    </div>
+
+                    <div class="contact-send-button">
+                        <label><input type="checkbox" name="agree" id="agree"> Li e concordo com a política de privacidade</label>
+                        <button class="banner-button button-secondary">
+                            ENVIAR
+                            <img src="../assets/img/icons/arrow-right.svg" alt="" class="arrow-right">
+                        </button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="contact-information">
+                <h4>Informações de contato</h4>
+
+                <div class="adress">
+                    <div class="adress-container street">
+                        <img src="../assets/img/icons/adress.svg" alt="Adress">
+                        <p>Av. Theodomiro Porto da Fonseca, 3101 - Cristo Rei, São Leopoldo - RS, 93022-715</p>
+                    </div>
+
+                    <div class="adress-container  phone">
+                        <img src="../assets/img/icons/phone.svg" alt="Phone">
+                        <p> (51) 3081-3600</p>
+                    </div>
+
+                    <div class="adress-container email">
+                        <img src="../assets/img/icons/email.svg" alt="Email">
+                        <p>contato@loremipsungram.com</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer container">
+        <div class="footer-logo">
+            <a href="/" class="logo">
+                <img src="../assets/img/icons/logo.svg" alt="Logo">
+                <img src="../assets/img/icons/logo-name.svg" alt="Logo name" class="footer-logo-name logo-name">
+            </a>
+
+            <img src="../assets/img/icons/logo-cwi.svg" alt="CWI" class="footer-logo-cwi">
+        </div>
+
+        <div class="footer-menu">
+            <ul class="menu">
+                <a href="/" class="menu-item">
+                    <li class="menu-item-link">Home</li>
+                </a>
+                <a href="/sobre/index.html" class="menu-item">
+                    <li class="menu-item-link">Sobre nós</li>
+                </a>
+                <a href="/" class="menu-item">
+                    <li class="menu-item-link">Serviços</li>
+                </a>
+                <a href="/contato/index.html" class="menu-item">
+                    <li class="menu-item-link">Contato</li>
+                </a>
+            </ul>
+
+            <p class="footer-copyright">Copyright ©. Todos os direitos reservados à Lorem Ipsum.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

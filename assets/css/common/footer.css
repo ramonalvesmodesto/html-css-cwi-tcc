@@ -1,0 +1,59 @@
+/*-----Main-----*/
+/*--Footer--*/
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footer-logo {
+    display: flex;
+    justify-content: space-between;
+
+    padding: 45px 0 25px 0;
+}
+
+.footer-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+.footer-copyright {
+    margin-right: 20px;
+}
+
+.footer .menu-item-link {
+    padding-left: 0;
+}
+
+@media (max-width: 803px) {
+
+    .footer {
+        height: 69px;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .footer-logo {
+        padding: 5px 0;
+    }
+
+    .footer-logo-cwi, .footer-menu {
+        display: none;
+    }
+
+    .footer::after {
+        content: "© Copyright 2019 Todos os direitos";
+        font-weight: 400;
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 630px) {
+    footer.footer .footer-logo .footer-logo-name {
+        display: flex;
+    }
+}

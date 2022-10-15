@@ -1,0 +1,431 @@
+/*-----Geral-----*/
+:root {
+    --gray: #898989;
+    --light-gray: #F6F6F6;
+    --border-color-input: #D7D7D7;
+    --purple: #515070;
+    --overlay: #51507067;
+    --orange: #FF8E6E;
+    --placeholdercolor: #A9A9A9;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+h1, h3, h4 {
+    margin: 0;
+}
+
+h1 {
+    font-size: 48px;
+}
+
+h3 {
+    font-size: 42px;
+}
+
+h4 {
+    font-size: 20px;
+}
+
+h5 {
+    font-size: 18px;
+    margin: 16px 0;
+}
+
+
+p {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 29px;
+}
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--gray);
+    background-color: white;
+}
+
+textarea {
+    outline: 0;
+    border: none;
+}
+
+select {
+    background-color: transparent;
+}
+
+.container {
+    max-width: 1346px;
+    margin: 0 auto;
+    width: 90%;
+}
+
+.button-primary {
+    background-color: var(--orange);
+}
+
+.button-primary:hover {
+    background-color: rgba(255, 141, 110, 0.8);
+}
+
+.button-secondary {
+    background-color: var(--purple);
+}
+
+.button-secondary:hover {
+    background-color: rgba(81, 80, 112, 0.8);
+}
+
+.text {
+    margin-top: 40px;
+    margin-bottom: 25px;
+    width: 493px;
+}
+
+.overlay::before {
+    content: "";
+    background-color: var(--overlay);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/*-----Main-----*/
+/*--Banner--*/
+.banner {
+    width: 100%;
+    height: 70vh;
+    position: relative;
+    background: url(../../../assets/img/banner.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.banner-content {
+    display: flex;
+    align-items: center;
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.banner-button {
+    width: 165px;
+    height: 60px;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    font-weight: 700;
+    position: relative;
+    cursor: pointer;
+}
+
+.arrow-right {
+    margin-left: 10%;
+    position: absolute;
+    top: 40%;
+}
+
+/*-----Main-----*/
+/*--Home About--*/
+.home-about {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 170px 0;
+}
+
+.home-about-title, .title {
+    color: var(--orange);
+}
+
+.home-about-title5, .title5 {
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 10px;
+}
+
+.home-about-image {
+    width: 400px;
+    margin: 0;
+}
+
+/*-----Main-----*/
+/*--Services--*/
+.services-about-title, .services-about-title5 {
+    color: white;
+}
+
+.services {
+    height: 60vh;
+    background: url(../../../assets/img/services.jpg) no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.services-data {
+    z-index: 1;
+}
+
+.services-text {
+    color: white;
+}
+
+.services-title, .services-title5 {
+    color: white;
+}
+
+/*-----Main-----*/
+/*--Depoiments--*/
+.depoiments {
+    width: 100%;
+    background-color: var(--light-gray);
+    padding: 170px 0;
+}
+
+.depoiments-about-title5 {
+    margin-top: 0;
+}
+
+.depoiments-cards {
+    display: flex;
+    justify-content: space-between;
+}
+
+.depoiment-card {
+    width: 500px;
+    background-color: white;
+    padding: 20px;
+    margin-top: 48px;
+    margin-right: 20px;
+    border-radius: 3px;
+}
+
+.depoiment-card:nth-last-child(1) {
+    margin-right: 0;
+}
+
+.depoiment-card img {
+    width: 80px;
+    height: 80px;
+}
+
+.depoiment-client {
+    display: flex;
+}
+
+.depoiment-client .client {
+    margin-left: 20px;
+}
+
+.depoiment-descrition-client {
+    width: 80%;
+}
+
+/*-----Main-----*/
+/*--functionality--*/
+.functionality {
+    background: linear-gradient(105.92deg, #515070 -8.44%, #6B69B0 94.86%);
+    padding-top: 60px;
+}
+
+.functionality-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.functionality-data {
+    width: 100%;
+    height: 551px;
+    position: relative;
+}
+
+.functionality-data-container {
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.functionality-card {
+    color: white;
+    display: flex;
+    align-items: center;
+    margin: 20px 0 80px 0;
+}
+
+.functionality-cwi-phone-image {
+    margin: 0 20px;
+    width: 332px;
+    position: absolute;
+    bottom: 0;
+    left: calc(50% - 186px);
+}
+
+.functionally-headset-image {
+    margin-right: 20px;
+    width: 50px;
+    height: 50px;
+}
+
+.functionally-text {
+    width: 243px;
+}
+
+/*-----Main-----*/
+/*--Talk to us--*/
+
+.talk-us {
+    padding: 170px 0;
+    background-color: var(--light-gray);
+}
+
+.talk-us-container {
+    display: flex;
+    align-items: center;
+}
+
+.talk-us-image {
+    margin-right: 133px;
+    width: 464px;
+}
+
+
+@media (max-width: 1220px) {
+    .talk-us-container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .talk-us-image {
+        margin: 0;
+    }
+}
+
+@media (max-width: 1170px) {
+    .functionality-data-container {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 50px;
+    }
+
+    .functionality-data {
+        height: 100%;
+    }
+
+    .functionality-cwi-phone-image {
+        position: static;
+    }
+
+    .functionality-card {
+        margin-bottom: 20px;
+        width: 100%;
+    }
+
+    .functionality-cwi-phone-image {
+        margin: 90px 0 0 0;
+        width: 332px;
+    }
+
+    .home-about {
+        flex-direction: column-reverse;
+        justify-content: space-evenly;
+        padding: 60px 0;
+    }
+}
+
+@media (max-width: 720px) {
+    h1 {
+        font-size: 32px;
+    }
+
+    p {
+        font-size: 0.9em;
+    }
+
+    .banner-button {
+        height: 50px;
+    }
+
+    .home-about-image {
+        max-width: 100%;
+        margin: 0;
+    }
+
+    .home-about-text, .services-text {
+        width: 100%;
+    }
+
+    .depoiments {
+        padding: 61px 0;
+    }
+
+    .depoiments-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .depoiments-cards {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .depoiment-card {
+        flex-direction: column;
+        align-items: center;
+        margin-right: 0;
+    }
+
+    .depoiment-client {
+        flex-direction: column;
+        align-items: center;
+    }
+    .depoiment-client .client {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .depoiment-descrition-client {
+        width: 100%;
+        text-align: center;
+    }
+
+    .talk-us-image {
+        max-width: 100%;
+    }
+
+    .talk-us {
+        padding: 72px 0;
+    }
+}
+
+@media (max-width: 610px) {
+    .text {
+        width: 100%;
+    }
+
+    .functionality-cwi-phone-image {
+        max-width: 100%;
+    }
+
+    .functionally-text {
+        width: 100%;
+    }
+}

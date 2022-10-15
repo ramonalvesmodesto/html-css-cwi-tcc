@@ -1,0 +1,194 @@
+/*-----Main-----*/
+/*--Banner--*/
+.banner {
+    height: 50vh;
+    background: url(../../../assets/img/contact.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+/*-----Main-----*/
+/*--Send message--*/
+.contact {
+    display: flex;
+    justify-content: space-between;
+}
+
+.send-message-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 32px;
+}
+
+.send-message {
+    padding: 38px 38px 38px 0;
+    width: 70%;
+}
+
+.send-message-container span  {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 700;
+    text-align: start;
+}
+
+.send-message-container .input, select {
+    width: 340px;
+    border: none;
+    border-bottom: 1px solid var(--border-color-input);
+    padding: 15px 0;
+    outline: 0;
+    color: var(--gray);
+}
+
+.send-message-container .input {
+    color: var(--gray);
+}
+
+.send-message-container-checkbox {
+    display: flex;
+    flex-direction: column;
+    width: 340px;
+    border-bottom: 1px solid var(--border-color-input);
+}
+
+.send-message-container-checkbox  .send-message-container {
+    margin: 0;
+    margin-top: 16px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.checkbox {
+    width: 16px;
+    height: 16px;
+    color: var(--gray);
+    margin-top: 0;
+    margin-right: 9px;
+}
+
+.checkbox-container label{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 23px;
+}
+
+.send-message-container-message label {
+    width: 100%;
+}
+
+.message {
+    border-bottom: 1px solid var(--border-color-input);
+    width: 100%;
+    height: 78px;
+    resize: none;
+}
+
+.send-message-title {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.send-message-title h4 {
+    color: var(--orange);
+}
+
+.send-message-email {
+    width: 48px;
+}
+
+/*-----Main-----*/
+/*--Information contact--*/
+
+.contact-information {
+    background-color: var(--purple);
+    width: 441px;
+    padding: 38px 38px 38px 50px;
+    color: white;
+}
+
+.adress {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.adress img {
+    margin-right: 22px;
+}
+
+.adress-container  {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.contact-send-button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 124px;
+}
+
+@media (max-width: 1200px) {
+
+    .send-message {
+        padding-right: 0;
+        width: 100%;
+    }
+
+    .contact {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .contact-information h4 {
+        margin-bottom: 60px;
+    }
+
+    .contact-information {
+        width: 100%;
+    }
+
+    .contact-send-button {
+        flex-direction: column;
+        
+
+    }
+
+
+}
+
+@media (max-width: 1200px) {
+    .send-message-container {
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+
+    .send-message-container .input, .send-message-container-checkbox, .ramo {
+        width: 100%;
+    }
+
+    .send-message-container-checkbox .send-message-container {
+        flex-direction: row;
+        margin-bottom: 65px;
+    }
+
+    .send-input {
+        margin-bottom: 16px;
+    }
+
+    .send-message-container-message label {
+        
+    }
+}
+
+@media (max-width: 398px) {
+    .send-message-title h4 {
+        font-size: 17px;
+    }
+} 
