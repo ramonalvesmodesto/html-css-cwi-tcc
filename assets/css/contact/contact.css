@@ -12,6 +12,9 @@
 .contact {
     display: flex;
     justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1346px;
 }
 
 .send-message-container {
@@ -22,7 +25,6 @@
 
 .send-message {
     padding: 38px 38px 38px 0;
-    width: 70%;
 }
 
 .send-message-container span  {
@@ -101,10 +103,12 @@
 
 /*-----Main-----*/
 /*--Information contact--*/
-
 .contact-information {
     background-color: var(--purple);
-    width: 441px;
+}
+
+.contact-information-container {
+    height: 100%;
     padding: 38px 38px 38px 50px;
     color: white;
 }
@@ -138,20 +142,21 @@
 
     .send-message {
         padding-right: 0;
-        width: 100%;
     }
 
     .contact {
+        width: 100%;
         flex-direction: column;
         text-align: center;
     }
 
-    .contact-information h4 {
+    .contact-information-container h4 {
         margin-bottom: 60px;
     }
 
-    .contact-information {
-        width: 100%;
+    .contact-information-container {
+        padding-left: 0;
+        padding-right: 0;
     }
 
     .contact-send-button {
@@ -173,7 +178,13 @@
 
     .send-message-container-checkbox .send-message-container {
         flex-direction: row;
-        margin-bottom: 65px;
+        flex-wrap: wrap;
+        margin-top: 0;
+        margin-bottom: 40px;
+    }
+
+    .send-message-container-checkbox  .checkbox-container {
+        margin-top: 20PX;
     }
 
     .send-input {
