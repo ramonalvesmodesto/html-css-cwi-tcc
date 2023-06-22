@@ -1,6 +1,6 @@
 # html-css-cwi-tcc
 
-https://ramonalvesmodesto.github.io/cwi-tcc-html-css/
+https://ramonalvesmodesto.github.io/html-css-cwi-tcc/
 
 ### ☠ TCC HTML e CSS
 
